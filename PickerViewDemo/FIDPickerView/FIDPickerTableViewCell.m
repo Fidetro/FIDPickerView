@@ -7,10 +7,9 @@
 //
 
 #import "FIDPickerTableViewCell.h"
-#define SCREEN_WIDTH  ([UIScreen mainScreen].bounds.size.width)
-#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
-#define kLabelFontSize (15.f)
 
+#define kLabelFontSize (15.f)
+NSString *const kFIDPickerTableViewCellIdentifier = @"kFIDPickerTableViewCellIdentifier";
 @interface FIDPickerTableViewCell ()<UIPickerViewDelegate,UIPickerViewDataSource>
 {
     UIToolbar *_inputAccessoryView;
@@ -35,7 +34,7 @@
 
 - (instancetype)initWithDataSource:(NSArray *)dataArray detailSource:(NSArray *)detailArray{
     
-    if ([super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:PICKERCELL]) {
+    if ([super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kFIDPickerTableViewCellIdentifier]) {
         
         self.dataArray = dataArray;
         self.detailArray = detailArray;
@@ -95,7 +94,7 @@
     
     if (!_inputAccessoryView) {
         
-        UIToolbar * toolBar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 44)];
+        UIToolbar * toolBar = [[UIToolbar alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 44)];
 
         toolBar.barTintColor = [UIColor whiteColor];//设置toolBar背景颜色
         UIBarButtonItem * DoneItem = [[UIBarButtonItem alloc]initWithCustomView:self.leftButton];

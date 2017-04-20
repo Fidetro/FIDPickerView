@@ -11,6 +11,7 @@
 #import "FIDPickerButton.h"
 #import "FIDPickerField.h"
 #import "PickerViewController.h"
+#import "FIDDateTableViewCell.h"
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 /** tableView **/
 @property(nonatomic,strong) UITableView *tableView;
@@ -27,6 +28,7 @@
                        @"FIDPickerButton",
                        @"FIDPickerField",
                        @"FIDPickerView",
+                       @"FIDDateTableViewCell"
                        ];
     [self.view addSubview:self.tableView];
     
@@ -54,7 +56,11 @@
     switch (indexPath.row) {
         case 0:
         {
-         FIDPickerTableViewCell *pickerCell = [[FIDPickerTableViewCell alloc]initWithDataSource:@[@[@"广东",@"福建"],@[@"深圳"]] detailSource:@[@"省",@"市"]];
+            FIDPickerTableViewCell *pickerCell = [tableView dequeueReusableCellWithIdentifier:kFIDPickerTableViewCellIdentifier];
+            if (pickerCell == nil) {
+            pickerCell = [[FIDPickerTableViewCell alloc]initWithDataSource:@[@[@"广东",@"福建"],@[@"深圳"]] detailSource:@[@"省",@"市"]];         
+            }
+
             pickerCell.select_block = ^(NSArray *selectArray,NSArray *rowInComponentArray){
                 NSLog(@"pickerCell 确定选择的内容%@",selectArray);
             };
@@ -90,8 +96,21 @@
         }
         case 3:
         {
-            
+            cell.textLabel.text = @"FIDPickerView";
             break;
+        }
+        case 4:
+        {
+            FIDDateTableViewCell *dateCell = [tableView dequeueReusableCellWithIdentifier:kFIDDateTableViewCellIdentifier
+                                              ];
+            if (dateCell == nil) {
+                dateCell = [[FIDDateTableViewCell alloc]init];
+            }
+            dateCell.textLabel.text = @"FIDDateTableViewCell";
+            dateCell.select_block = ^(NSDate *date){
+                NSLog(@"选择日期%@",date);
+            };
+            return dateCell;
         }
         default:
         {

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		185C2D4A78CB9B3A8FA9A7F4 /* libPods-PickerViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E5D3F3F92BE3BA71E25E23 /* libPods-PickerViewDemo.a */; };
+		9A56AA641EA8F23E00BCDBF3 /* FIDDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56AA631EA8F23E00BCDBF3 /* FIDDateTableViewCell.m */; };
 		9A6978F81E325E7600E83A60 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6978F71E325E7600E83A60 /* PickerViewController.m */; };
 		9ACBC7BC1E2E617B00DAAE1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBC7BB1E2E617B00DAAE1B /* main.m */; };
 		9ACBC7BF1E2E617B00DAAE1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBC7BE1E2E617B00DAAE1B /* AppDelegate.m */; };
@@ -44,6 +45,8 @@
 		20ED9068C556BAB4B41D59F5 /* Pods-PickerViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickerViewDemo/Pods-PickerViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3D8EB14F83A36A3CC82A6F04 /* Pods-PickerViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickerViewDemo/Pods-PickerViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		89E5D3F3F92BE3BA71E25E23 /* libPods-PickerViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PickerViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A56AA621EA8F23E00BCDBF3 /* FIDDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIDDateTableViewCell.h; sourceTree = "<group>"; };
+		9A56AA631EA8F23E00BCDBF3 /* FIDDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIDDateTableViewCell.m; sourceTree = "<group>"; };
 		9A6978F61E325E7600E83A60 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
 		9A6978F71E325E7600E83A60 /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
 		9ACBC7B71E2E617B00DAAE1B /* PickerViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +179,8 @@
 				9ACBC7F31E2E62EC00DAAE1B /* FIDPickerView.m */,
 				9ACBC7FA1E2E671100DAAE1B /* FIDPickerTableViewCell.h */,
 				9ACBC7FB1E2E671100DAAE1B /* FIDPickerTableViewCell.m */,
+				9A56AA621EA8F23E00BCDBF3 /* FIDDateTableViewCell.h */,
+				9A56AA631EA8F23E00BCDBF3 /* FIDDateTableViewCell.m */,
 			);
 			path = FIDPickerView;
 			sourceTree = "<group>";
@@ -392,6 +397,7 @@
 				9ACBC7BC1E2E617B00DAAE1B /* main.m in Sources */,
 				9A6978F81E325E7600E83A60 /* PickerViewController.m in Sources */,
 				9ACBC7FC1E2E671100DAAE1B /* FIDPickerTableViewCell.m in Sources */,
+				9A56AA641EA8F23E00BCDBF3 /* FIDDateTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

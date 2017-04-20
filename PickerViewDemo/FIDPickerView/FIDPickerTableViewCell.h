@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#define PICKERCELL @"pickerViewCell"
 
+extern NSString *const kFIDPickerTableViewCellIdentifier;
 typedef void(^SELECT_BLOCK)(NSArray *selectArray,NSArray *rowInComponentArray);
 @protocol FIDPickerCellDelegate <NSObject>
 /**
