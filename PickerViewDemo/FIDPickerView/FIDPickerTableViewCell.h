@@ -33,5 +33,7 @@ typedef void(^SELECT_BLOCK)(NSArray *selectArray,NSArray *rowInComponentArray);
 @property(nonatomic,weak)id<FIDPickerCellDelegate> delegate;
 /** SELECT_BLOCK **/
 @property(nonatomic,copy)SELECT_BLOCK select_block;
--(instancetype)initWithDataSource:(NSArray *)dataArray detailSource:(NSArray *)detailArray;
+- (instancetype)initWithDataSource:(NSArray *)dataArray detailSource:(NSArray *)detailArray;
+- (instancetype)initWithDataSource:(NSArray *)dataArray detailSource:(NSArray *)detailArray reuseIdentifier:(NSString *)identifier;
+
 @end

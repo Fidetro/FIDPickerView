@@ -10,7 +10,7 @@
 
 @protocol FIDPickerViewDelegate <NSObject>
 
-- (void)selectPickerDataSource:(NSArray *)Source;
+- (void)FIDPickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component;
 
 @end
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		185C2D4A78CB9B3A8FA9A7F4 /* libPods-PickerViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89E5D3F3F92BE3BA71E25E23 /* libPods-PickerViewDemo.a */; };
+		9A10ECC31EBCD0AE00CA97FB /* FIDPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10ECC21EBCD0AE00CA97FB /* FIDPickerView.m */; };
+		9A10ECC61EBCD0BB00CA97FB /* FIDPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A10ECC51EBCD0BB00CA97FB /* FIDPickerTableViewCell.m */; };
 		9A56AA641EA8F23E00BCDBF3 /* FIDDateTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A56AA631EA8F23E00BCDBF3 /* FIDDateTableViewCell.m */; };
 		9A6978F81E325E7600E83A60 /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6978F71E325E7600E83A60 /* PickerViewController.m */; };
 		9ACBC7BC1E2E617B00DAAE1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBC7BB1E2E617B00DAAE1B /* main.m */; };
@@ -20,8 +22,6 @@
 		9ACBC7E01E2E617B00DAAE1B /* PickerViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBC7DF1E2E617B00DAAE1B /* PickerViewDemoUITests.m */; };
 		9ACBC7F61E2E62EC00DAAE1B /* FIDPickerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBC7EF1E2E62EC00DAAE1B /* FIDPickerButton.m */; };
 		9ACBC7F71E2E62EC00DAAE1B /* FIDPickerField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBC7F11E2E62EC00DAAE1B /* FIDPickerField.m */; };
-		9ACBC7F81E2E62EC00DAAE1B /* FIDPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBC7F31E2E62EC00DAAE1B /* FIDPickerView.m */; };
-		9ACBC7FC1E2E671100DAAE1B /* FIDPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ACBC7FB1E2E671100DAAE1B /* FIDPickerTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +45,10 @@
 		20ED9068C556BAB4B41D59F5 /* Pods-PickerViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PickerViewDemo/Pods-PickerViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		3D8EB14F83A36A3CC82A6F04 /* Pods-PickerViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PickerViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PickerViewDemo/Pods-PickerViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		89E5D3F3F92BE3BA71E25E23 /* libPods-PickerViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PickerViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A10ECC11EBCD0AE00CA97FB /* FIDPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIDPickerView.h; sourceTree = "<group>"; };
+		9A10ECC21EBCD0AE00CA97FB /* FIDPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIDPickerView.m; sourceTree = "<group>"; };
+		9A10ECC41EBCD0BB00CA97FB /* FIDPickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIDPickerTableViewCell.h; sourceTree = "<group>"; };
+		9A10ECC51EBCD0BB00CA97FB /* FIDPickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIDPickerTableViewCell.m; sourceTree = "<group>"; };
 		9A56AA621EA8F23E00BCDBF3 /* FIDDateTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIDDateTableViewCell.h; sourceTree = "<group>"; };
 		9A56AA631EA8F23E00BCDBF3 /* FIDDateTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIDDateTableViewCell.m; sourceTree = "<group>"; };
 		9A6978F61E325E7600E83A60 /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
@@ -69,10 +73,6 @@
 		9ACBC7EF1E2E62EC00DAAE1B /* FIDPickerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIDPickerButton.m; sourceTree = "<group>"; };
 		9ACBC7F01E2E62EC00DAAE1B /* FIDPickerField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIDPickerField.h; sourceTree = "<group>"; };
 		9ACBC7F11E2E62EC00DAAE1B /* FIDPickerField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIDPickerField.m; sourceTree = "<group>"; };
-		9ACBC7F21E2E62EC00DAAE1B /* FIDPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIDPickerView.h; sourceTree = "<group>"; };
-		9ACBC7F31E2E62EC00DAAE1B /* FIDPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIDPickerView.m; sourceTree = "<group>"; };
-		9ACBC7FA1E2E671100DAAE1B /* FIDPickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIDPickerTableViewCell.h; sourceTree = "<group>"; };
-		9ACBC7FB1E2E671100DAAE1B /* FIDPickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIDPickerTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,10 +175,10 @@
 				9ACBC7EF1E2E62EC00DAAE1B /* FIDPickerButton.m */,
 				9ACBC7F01E2E62EC00DAAE1B /* FIDPickerField.h */,
 				9ACBC7F11E2E62EC00DAAE1B /* FIDPickerField.m */,
-				9ACBC7F21E2E62EC00DAAE1B /* FIDPickerView.h */,
-				9ACBC7F31E2E62EC00DAAE1B /* FIDPickerView.m */,
-				9ACBC7FA1E2E671100DAAE1B /* FIDPickerTableViewCell.h */,
-				9ACBC7FB1E2E671100DAAE1B /* FIDPickerTableViewCell.m */,
+				9A10ECC11EBCD0AE00CA97FB /* FIDPickerView.h */,
+				9A10ECC21EBCD0AE00CA97FB /* FIDPickerView.m */,
+				9A10ECC41EBCD0BB00CA97FB /* FIDPickerTableViewCell.h */,
+				9A10ECC51EBCD0BB00CA97FB /* FIDPickerTableViewCell.m */,
 				9A56AA621EA8F23E00BCDBF3 /* FIDDateTableViewCell.h */,
 				9A56AA631EA8F23E00BCDBF3 /* FIDDateTableViewCell.m */,
 			);
@@ -391,12 +391,12 @@
 			files = (
 				9ACBC7C21E2E617B00DAAE1B /* ViewController.m in Sources */,
 				9ACBC7F71E2E62EC00DAAE1B /* FIDPickerField.m in Sources */,
+				9A10ECC61EBCD0BB00CA97FB /* FIDPickerTableViewCell.m in Sources */,
 				9ACBC7F61E2E62EC00DAAE1B /* FIDPickerButton.m in Sources */,
 				9ACBC7BF1E2E617B00DAAE1B /* AppDelegate.m in Sources */,
-				9ACBC7F81E2E62EC00DAAE1B /* FIDPickerView.m in Sources */,
+				9A10ECC31EBCD0AE00CA97FB /* FIDPickerView.m in Sources */,
 				9ACBC7BC1E2E617B00DAAE1B /* main.m in Sources */,
 				9A6978F81E325E7600E83A60 /* PickerViewController.m in Sources */,
-				9ACBC7FC1E2E671100DAAE1B /* FIDPickerTableViewCell.m in Sources */,
 				9A56AA641EA8F23E00BCDBF3 /* FIDDateTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

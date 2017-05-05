@@ -32,9 +32,9 @@ NSString *const kFIDPickerTableViewCellIdentifier = @"kFIDPickerTableViewCellIde
 
 @implementation FIDPickerTableViewCell
 
-- (instancetype)initWithDataSource:(NSArray *)dataArray detailSource:(NSArray *)detailArray{
-    
-    if ([super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:kFIDPickerTableViewCellIdentifier]) {
+- (instancetype)initWithDataSource:(NSArray *)dataArray detailSource:(NSArray *)detailArray reuseIdentifier:(NSString *)identifier
+{
+    if ([super initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifier]) {
         
         self.dataArray = dataArray;
         self.detailArray = detailArray;
@@ -42,6 +42,12 @@ NSString *const kFIDPickerTableViewCellIdentifier = @"kFIDPickerTableViewCellIde
     }
     
     return self;
+}
+
+- (instancetype)initWithDataSource:(NSArray *)dataArray detailSource:(NSArray *)detailArray{
+
+    
+    return [self initWithDataSource:dataArray detailSource:detailArray reuseIdentifier:kFIDPickerTableViewCellIdentifier];
     
 }
 

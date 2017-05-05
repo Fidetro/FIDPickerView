@@ -83,6 +83,7 @@
 //选择pickerView显示内容的时候，需要重写这个方法
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
     
+    [self.FIDdelegate FIDPickerView:pickerView didSelectRow:row inComponent:component];
     NSLog(@"滚动选择的内容 %@",self.dataArray[component][row]);
     
 }
